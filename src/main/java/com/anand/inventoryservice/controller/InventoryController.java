@@ -19,4 +19,11 @@ public class InventoryController {
         return  false;
     }
 
+    @GetMapping("/test")
+    @ResponseStatus(HttpStatus.OK)
+    public String test(){
+//        inventoryService.isInStock(code);
+        return  "Hi This is Test";
+    }
+
 }
